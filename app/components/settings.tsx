@@ -274,21 +274,7 @@ export function Settings() {
               title={Locale.Settings.Actions.ClearAll}
             />
           </div>
-          <div className={styles["window-action-button"]}>
-            <IconButton
-              icon={<ResetIcon />}
-              onClick={() => {
-                const confirmed = window.confirm(
-                  `${Locale.Settings.Actions.ConfirmResetAll.Confirm}`,
-                );
-                if (confirmed) {
-                  resetConfig();
-                }
-              }}
-              bordered
-              title={Locale.Settings.Actions.ResetAll}
-            />
-          </div>
+        
           <div className={styles["window-action-button"]}>
             <IconButton
               icon={<CloseIcon />}
